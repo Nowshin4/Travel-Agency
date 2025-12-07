@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Jadoo — Bookings</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+  <div class="container header-inner">
+    <div class="logo">Jadoo</div>
+    <nav class="nav" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="flights.html">Flights</a>
+      <a href="bookings.html">Bookings</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="auth">
+      <button class="btn btn-ghost">Login</button>
+      <button class="btn btn-primary">Sign up</button>
+    </div>
+    <button id="mobile-toggle" class="btn btn-ghost" aria-label="menu">☰</button>
+  </div>
+</header>
+
+<main>
+  <!-- Hero Section -->
+  <section class="section hero container">
+    <div class="hero-left">
+      <div class="kicker">Bookings</div>
+      <h1>Book Your Trip Effortlessly</h1>
+      <p class="muted">Search, compare, and book flights, hotels, and experiences all in one place.</p>
+    </div>
+    <div class="hero-right">
+      <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1f" alt="Bookings">
+    </div>
+  </section>
+
+  <!-- Booking Search Form -->
+  <section class="section container fade-up">
+    <h2 class="h2">Find Your Booking</h2>
+    <div class="card" style="padding:24px;">
+      <form class="form-inline" onsubmit="event.preventDefault(); alert('Search submitted!')">
+        <input class="input" type="text" placeholder="Destination" required>
+        <input class="input" type="date" placeholder="Check-in" required>
+        <input class="input" type="date" placeholder="Check-out" required>
+        <select class="input" required>
+          <option value="">Guests</option>
+          <option value="1">1 Guest</option>
+          <option value="2">2 Guests</option>
+          <option value="3">3 Guests</option>
+          <option value="4">4 Guests</option>
+        </select>
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Featured Deals -->
+  <section class="section container fade-up">
+    <h2 class="h2">Featured Deals</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="Beach Resort" style="width:100%;height:200px;object-fit:cover;">
+        <h3>Beach Resort, Bali</h3>
+        <p class="muted">3 nights starting from $299</p>
+        <button class="btn btn-primary">Book Now</button>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=2" alt="City Hotel" style="width:100%;height:200px;object-fit:cover;">
+        <h3>City Hotel, New York</h3>
+        <p class="muted">2 nights starting from $249</p>
+        <button class="btn btn-primary">Book Now</button>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3" alt="Flight Deal" style="width:100%;height:200px;object-fit:cover;">
+        <h3>Flight to Paris</h3>
+        <p class="muted">Roundtrip starting from $399</p>
+        <button class="btn btn-primary">Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section container fade-up">
+    <h2 class="h2">What Travelers Say</h2>
+    <div class="testimonial card">
+      <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=5d" alt="person">
+      <div>
+        <p>"Booking my trips via Jadoo was so easy and stress-free. Highly recommended!"</p>
+        <strong>— Alex Kim, London</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section container fade-up">
+    <h2 class="h2">Frequently Asked Questions</h2>
+    <div class="card">
+      <h3>Can I modify my booking?</h3>
+      <p class="muted">Yes, you can change dates or guests up to 24 hours before check-in.</p>
+    </div>
+    <div class="card">
+      <h3>Do you offer refunds?</h3>
+      <p class="muted">Refund policies depend on the hotel or airline. Check terms before booking.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section container fade-up center">
+    <h2 class="h2">Ready to book your next trip?</h2>
+    <p class="muted">Search and book in minutes with Jadoo.</p>
+    <div style="margin-top:12px"><a class="btn btn-primary" href="bookings.html">Start Booking</a></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="col">
+      <div class="logo">Jadoo</div>
+      <p class="muted">Book your trip in minutes, get full control for much longer.</p>
+    </div>
+    <div class="col">
+      <strong>Company</strong>
+      <ul style="list-style:none;padding:0;margin:10px 0 0"><li>About</li><li>Careers</li><li>Mobile</li></ul>
+    </div>
+    <div class="col">
+      <strong>Contact</strong>
+      <ul style="list-style:none;padding:0;margin:10px 0 0"><li>Help/FAQ</li><li>Press</li><li>Affiliates</li></ul>
+    </div>
+    <div class="col">
+      <strong>More</strong>
+      <ul style="list-style:none;padding:0;margin:10px 0 0"><li>Airlines</li><li>Low fare tips</li></ul>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
